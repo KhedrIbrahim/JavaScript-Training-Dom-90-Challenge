@@ -1,0 +1,46 @@
+@keyframes anim {
+    from {
+        background-image: linear-gradient(to right, rgba(255, 0, 0, 0.554), rgba(126, 120, 120, 0.73),  rgba(255, 0, 0, 0.554));
+    }
+    to {
+        background-image: linear-gradient(to right, rgba(126, 120, 120, 0.73),  rgba(255, 0, 0, 0.554), rgba(126, 120, 120, 0.73));
+    }
+}
+@keyframes animTwo{
+    from {
+        background-image: linear-gradient(to right, rgb(64, 90, 123), rgba(255, 255, 255, 0.696), rgb(64, 90, 123));
+    }
+    to {
+        background-image: linear-gradient(to right, rgba(255, 255, 255, 0.696),rgb(64, 90, 123), rgba(255, 255, 255, 0.696));
+    }
+}
+body{
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+}
+div{
+    color: rgb(3, 3, 3);
+    background-color: rgba(126, 120, 120, 0.73);
+    width: 40%;
+    text-align: center;
+    height: 100px;
+    margin: auto auto 50px auto;
+    border-radius: 8px;
+}
+div:hover{
+    width: calc(40% + 10px);
+    cursor: pointer;
+    animation: animTwo 1s linear infinite;
+}
+h3{
+    background-color: rgb(159, 138, 138);
+    animation: anim 2s infinite;
+}
+p{
+    background-color: rgb(114, 114, 141);
+    height: 50px;
+    line-height: 50px;
+}
